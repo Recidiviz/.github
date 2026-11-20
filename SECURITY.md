@@ -1,57 +1,57 @@
 # Security Policy
 
-## Reporting a Vulnerability
+Recidiviz welcomes reports from security researchers and the public. If you think you have found a security vulnerability in a Recidiviz product or website, please tell us. This page explains how to report it and what you can expect from us. It follows the Recidiviz Responsible Disclosure Policy.
 
-We take the security of our project seriously. We appreciate your efforts to responsibly disclose vulnerabilities and we will make every effort to acknowledge your contributions.
+## How to report
 
-If you believe you have found a security vulnerability in this project, please report it to us as soon as possible. We encourage you to use one of the following methods:
+Email security@recidiviz.org. Please include:
 
-**1. Private Vulnerability Reporting (Recommended)**
+- The product, website, or API, and the URL or endpoint.
+- A description of the vulnerability and its impact.
+- Steps to reproduce it, with any proof-of-concept code, requests, or screenshots.
+- How you would like us to credit you, if at all.
 
-For sensitive issues, the most secure way to report a vulnerability is to use GitHub's private vulnerability reporting feature. This allows you to privately report a vulnerability to the repository maintainers.
+Please do not report vulnerabilities in public GitHub issues, discussions, or pull requests.
 
-* On the repository page, navigate to the **`Security`** tab.
-* Click **`Advisories`** and then **`New draft security advisory`**.
-* Fill out the form with details of the vulnerability.
+## Scope
 
-This is the preferred method as it ensures the report is immediately private and only visible to project maintainers.
+In scope:
 
-**2. Direct Email**
+- Recidiviz web applications and their APIs.
+- Recidiviz websites, including recidiviz.org.
+- Code in the public repositories of the Recidiviz GitHub organization.
 
-If private vulnerability reporting is not an option, you can send an email to `security@recidiviz.org` Please include a detailed description of the vulnerability, including:
+Out of scope:
 
-* A clear and concise description of the vulnerability.
-* Steps to reproduce the vulnerability.
-* Any proof-of-concept code or exploits.
-* Potential impact of the vulnerability.
+- Social engineering or phishing of Recidiviz employees, contractors, or partners.
+- Denial of service, including distributed denial of service (DDoS), and spamming.
+- Physical attacks against Recidiviz offices, property, or data centers.
+- Services that third parties run, such as our cloud, email, and software vendors. Report those to the vendor.
 
-We kindly request that you **do not** publicly disclose the vulnerability until we have had a chance to address it. We will acknowledge your report within a few business days and will work with you to understand and fix the issue.
+## Rules for research
 
----
+- Test only systems that are in scope.
+- Use only accounts you own, or accounts whose holder has given you explicit permission.
+- Do not violate privacy, destroy or change data, or interrupt or degrade our services.
+- Our systems hold sensitive information about people involved in the criminal justice system. Do not access, download, or keep data about any person. If you come across such data, stop testing at once, do not share it, delete any copy you have, and report it to us.
+- Give us a reasonable amount of time to fix the issue before you disclose it to the public or a third party.
 
-## Supported Versions
+## What you can expect from us
 
-To ensure a secure experience for all users, we provide security updates for specific versions of our software. We recommend that you always use the latest supported version.
+- We will acknowledge your email within five business days.
+- We will work with you to understand and confirm the issue, and keep you informed while we fix it.
+- We aim to resolve critical issues within ten business days of your report.
 
-The following table outlines which versions are currently receiving security support.
+## Safe harbor
 
-| Version | Supported          | Status             |
-| ------- | ------------------ | ------------------ |
-| v2.x.x  | :white_check_mark: | Actively supported |
-| v1.x.x  | :x:                | No longer supported|
-| < older versions > | :x:                | No longer supported |
+If you make a good-faith effort to follow this policy, we will treat your research as authorized. We will not bring legal action against you for it, and we will not ask law enforcement to act against you. If a third party takes legal action against you for research that followed this policy, we will make it known that your research was authorized. If you are unsure whether something is allowed, email us before you go further.
 
-If you are using a version that is no longer supported, we highly recommend upgrading to a supported version to receive critical security patches.
+## No bug bounty
 
----
+Recidiviz does not pay bounties or rewards for vulnerability reports.
 
-## Security Audit and Bounty Program
+## Policy
 
-We are committed to continuous security improvement. We may periodically engage third-party security firms to conduct audits of our codebase.
+This page is the public version of the Recidiviz Responsible Disclosure Policy, and the policy points here for its current guidelines. Our security portal at https://security.recidiviz.org has more about the Recidiviz security program.
 
-
----
-
-## Public Disclosure
-
-Thank you for helping us keep this project secure.
+Because this file is in the Recidiviz organization's `.github` repository, GitHub shows it as the security policy for every public Recidiviz repository that does not have its own.
